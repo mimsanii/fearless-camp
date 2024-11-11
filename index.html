@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fearless Camp Event</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <h1>Fearless Camp 2024</h1>
+    <p>Join us for an unforgettable experience!</p>
+  </header>
+
+  <!-- Event Description Section -->
+  <section id="event-description">
+    <h2>About the Event</h2>
+    <p>Fearless Camp is a life-changing experience where people come together to grow in faith, build friendships, and encounter God. Join us this August for a weekend filled with worship, workshops, and fellowship.</p>
+  </section>
+
+  <!-- Video Gallery Section -->
+  <section id="video-gallery">
+    <h2>Video Gallery</h2>
+    <div class="video-wrapper">
+      <video controls>
+        <source src="videos/camp_video1.mp4" type="video/mp4">
+      </video>
+      <video controls>
+        <source src="videos/camp_video2.mp4" type="video/mp4">
+      </video>
+      <video controls>
+        <source src="videos/camp_video2.mp4" type="video/mp4">
+      </video>
+      <!-- Add more videos if needed -->
+    </div>
+  </section>
+
+  <!-- Registration Form Section -->
+  <section id="registration">
+    <h2>Register Now</h2>
+    <form id="registration-form">
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="church">Church:</label>
+      <input type="text" id="church" name="church" required>
+
+      <label for="payment">Payment Method:</label>
+      <select id="payment" name="payment" required>
+        <option value="mpesa">Mpesa</option>
+        <option value="visa">Visa</option>
+      </select>
+
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+  
+  <!-- Photo Gallery Section -->
+  <section id="photo-gallery">
+    <h2>Photo Gallery</h2>
+    <div class="gallery">
+      <img src="images/photo1.jpg" alt="Fearless Camp Photo 1">
+      <img src="images/photo2.jpg" alt="Fearless Camp Photo 2">
+      <img src="images/photo3.jpg" alt="Fearless Camp Photo 3">
+      <img src="images/photo4.jpg" alt="Fearless Camp Photo 4">
+      <img src="images/photo5.jpg" alt="Fearless Camp Photo 5">
+      <img src="images/photo6.jpg" alt="Fearless Camp Photo 6">
+      <img src="images/photo7.jpg" alt="Fearless Camp Photo 7">
+      <!-- you can Add more images if needed -->
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2024 Fearless Camp. All Rights Reserved.</p>
+  </footer>
+
+  <!-- Modal for Enlarged Photos -->
+  <div id="photo-modal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modal-image">
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
